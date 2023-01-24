@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3>Products</h3>
+    <div class="products_part">
+        <div class="table_filter">
+            <select name="" id="filter_product_table_select"></select>
+            <input type="button" value="filter" id="filter_product_table_btn">
+            <input type="button" value="clear" id="clear_filter_table_btn">
+        </div>
+      <div class="products_table part">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody id="product_table_body"></tbody>
+        </table>
+      </div>
+      <div class="products_add_part">
+        <h4>Add new product</h5>
+        <div class="add_product_card">
+            <label for="product_name_input">Name</label>
+            <input type="text" id="product_name_input">
+            <label for="product_price_input">Price</label>
+            <input type="text" id="product_price_input">
+            <label for="select_category">Select category</label>
+            <select name="Category" id="select_category">
+            </select>
+            <input type="button" value="Add" id="add_new_product_btn">
+        </div>
+
+      </div>
+      <div class="categories_part">
+        <h4>Add new category</h4>
+        <label for="category_name_input">Category name</label>
+        <input type="text" id="category_name_input">
+        <button id="add_new_category_btn">Add</button>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
